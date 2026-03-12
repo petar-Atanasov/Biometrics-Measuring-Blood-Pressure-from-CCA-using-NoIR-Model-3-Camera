@@ -206,7 +206,7 @@ Validation loss stabilised around:
 ---
 
 ## Evaluation Methodology 
-The models were evaluated using both **qualitative and quantitative methods**.
+#### The models were evaluated using both **qualitative and quantitative methods**.
 ---
 
 ## Qualitative Evaluation 
