@@ -11,7 +11,8 @@ sophisticated preprocessing techniques (Contrast-limited adaptive histogram
 equalization (CLAHE), Gaussian filtering, Frangi enhancement) and deep learning
 architectures tailored for vascular detection. The performance evaluation integrated
 visual inspections, silhouette analysis, and training loss measures, demonstrating that
-the UNet++ model exhibits enhanced anatomical correctness and segmentation
+the UNet++ model exhibits enhanced anatomical correctness and segmentation![Autoencoder](https://github.com/user-attachments/assets/9c2f45e6-7c29-4be4-a242-1546d36555f3)
+
 quality relative to unsupervised methods. Despite recognised limitations such as
 motion artefacts and processing requirements, the results demonstrate the feasibility
 of continuous, real-time physiological biometric monitoring, establishing a basis for
