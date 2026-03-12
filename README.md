@@ -222,7 +222,7 @@ Evaluation criteria:
 ---
 
 ## Quantitative Evaluation 
-Different metrics were used depending on the model type. 
+#### Different metrics were used depending on the model type. 
 ---
 ### Silhouette Analysis (K-Means)
 Silhouette score measures clustering quality. 
