@@ -112,13 +112,15 @@ Limitations:
 ---
 #### Segmentation Example of K-Means Clustering
 <img width="1244" height="331" alt="K-Means-1" src="https://github.com/user-attachments/assets/8c5deb31-637c-4eb4-9f51-ec78a9e4913b" />
-K-Means Image Segmentation, a) Enhanced Denoised Image, b) Frangi
-Filtered Artery Mask, c) Segmented Ward Linkage Image with K-Means
+
 ---
+
 <img width="1236" height="326" alt="K-Means-3" src="https://github.com/user-attachments/assets/faac2cce-3103-4dfc-ab82-54cd8a615a21" />
 K-Means Image Segmentation, a) Enhanced Denoised Image, b) Frangi
 Filtered Artery Mask, c) Segmented Ward Linkage Image with K-Means
+
 ---
+
 ### 2. Covolutional Autoencoder
 The second method uses a **deep unsupervised neural network**.
 #### Architecure
