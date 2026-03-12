@@ -88,7 +88,7 @@ Additional enhancement techniques include:
 #### These steps improve vascular boundary detection under low light conditions.
 ---
 ## Segmentation Algorithms
-Three different segmentation approaches were implemented and compared.
+#### Three different segmentation approaches were implemented and compared.
 ---
 ### 1. K-Means Clustering
 K-Means is an unsupervised clustering algorithm used as the **baseline segmentation method**.
@@ -145,5 +145,29 @@ Upsampling
 Reconstructed segmentatiom mask
 ```
 
-#### The autoencoder 
+#### The autoencoder learns to reconstruct vascular strucutres from compressed representations. 
+---
+#### Training
+The model was trained for:
+```
+100 epochs
+```
+Loss funciton: 
+```
+Binary Cross Entropy (BCE)
+```
+Training loss decreased from approximately:
+
+<img width="973" height="481" alt="Screenshot 2025-03-31 142017" src="https://github.com/user-attachments/assets/a759d7f7-aa43-47fc-8f4c-03aea4004532" />
+
+showing strong learning convergence. 
+--- 
+
+#### Segmentation Example of Convolutional Autoencoder
+
+<img width="1549" height="398" alt="Autoencoder" src="https://github.com/user-attachments/assets/6bd0642a-6dbb-45e4-b862-d25e3c710b22" />
+
+Convolutional Autoencoder Image Segmentation a) Original Image, b)
+Autoencoder Feature Enhanced Artery Image, c) Segmentation Red Overlay
+
 
