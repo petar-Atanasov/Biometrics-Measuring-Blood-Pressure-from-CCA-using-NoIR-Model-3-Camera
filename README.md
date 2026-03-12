@@ -157,10 +157,10 @@ Loss funciton:
 Binary Cross Entropy (BCE)
 ```
 Training loss decreased from approximately:
-
-<img width="973" height="481" alt="Screenshot 2025-03-31 142017" src="https://github.com/user-attachments/assets/a759d7f7-aa43-47fc-8f4c-03aea4004532" />
-
-showing strong learning convergence. 
+```
+0.65 -> 0.30
+```
+#### showing strong learning convergence. 
 --- 
 
 #### Segmentation Example of Convolutional Autoencoder
@@ -170,4 +170,115 @@ showing strong learning convergence.
 Convolutional Autoencoder Image Segmentation a) Original Image, b)
 Autoencoder Feature Enhanced Artery Image, c) Segmentation Red Overlay
 
+### 3. UNet++ Segmentation 
+UNet++ is an advanced deep learning architecture designed specifically for **medical image segmentation**.
 
+It extends the original U-Net with:
+- nested skip connections
+- dense feature propagation
+- multi-scale feature extraction
+
+#### These features allow the model to capture fine vascular details.
+---
+
+#### Training 
+Training configuration:
+```
+Epochs: 50
+Batch size: 8
+Loss function:
+Binary Cross Entropy + Dice Loss
+```
+
+Training loss decreased from: 
+```
+1.8 -> 1.0
+```
+
+Validation loss stabilised around: 
+```
+~1.6
+```
+#### indicating good convergence with minor overfitting.
+---
+#### Segmentation Example of UNet++
+
+<img width="945" height="467" alt="unet++" src="https://github.com/user-attachments/assets/c2af923f-0483-4349-93f8-df71aeba43a0" />
+
+---
+
+## Evaluation Methodology 
+The models were evaluated using both **qualitative and quantitative methods**.
+---
+
+## Qualitative Evaluation 
+Segmentation outputs were visually inspected by overlaying segmentation masks on the original images. 
+
+Evaluation criteria:
+
+- anatomical accuracy
+- vessel continuity
+- boundary precision 
+
+#### UNet++ showed the best ability to preserve arterial structures even under challenging imaging conditions.
+---
+
+## Quantitative Evaluation 
+Different metrics were used depending on the model type. 
+---
+### Silhouette Analysis (K-Means)
+Silhouette score measures clustering quality. 
+
+``` 
+Score range: -1 to 1
+```
+
+Results: 
+--- 
+
+<img width="935" height="556" alt="Screenshot 2025-03-29 155858" src="https://github.com/user-attachments/assets/3ff1991a-6a3d-464b-82e8-f83a3feec0de" />
+
+#### Higher values indicate strong cluster separation. 
+---
+
+### Training loss Analysis
+For deep learning models, performance was evaluated using loss curves.
+
+### Autoencoder: 
+---
+
+<img width="973" height="481" alt="Screenshot 2025-03-31 142017" src="https://github.com/user-attachments/assets/1c71ec14-b3bd-47b9-89e6-975adae131e3" />
+
+---
+### UNet++
+---
+
+<img width="873" height="436" alt="final plot model2 trained (2)" src="https://github.com/user-attachments/assets/95d4747e-45cb-4721-a032-48d1f8f041b2" />
+
+---
+#### These results demonstrate stable model learning and convergence. 
+---
+
+## Key Results
+Main findings from the experiments:
+| **Model** | **Strenghts** | **Limitations** |
+|------|------|------|
+| K- Means | Fast, simple clustering | Fragmented segmentation |
+| Autoencoder | Good unsupervised learning | Occasional anatomical errors |
+| UNet++ | Highest segmentation accuracy | Higher computational cost |
+
+#### UNet++ produced the most anatomically consistent segmentation results.
+---
+## Technologies Used
+Programming
+- Python
+
+Libraries and frameworks
+- TensorFlow / Keras
+- OpenCV
+- NumPy
+- Scikit-learn
+
+Hardware
+- Raspberry Pi 5
+- Raspberry Pi NoIR Camera
