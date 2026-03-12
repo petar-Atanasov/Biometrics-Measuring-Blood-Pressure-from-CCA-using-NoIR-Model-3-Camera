@@ -69,7 +69,7 @@ Benefits:
 --- 
 ### Frangi Vessel Enhancement Filter
 
-The Frangi filter highlights **tubular structures such as blood vessels**.
+#### The Frangi filter highlights **tubular structures such as blood vessels**.
 It works by analising the **Hessian matrix eigenvalues** to detect vessel-like shapes.
 This step significantly improves artery detection before segmentation.
 ---
