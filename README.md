@@ -117,8 +117,7 @@ Limitations:
 ---
 
 <img width="1236" height="326" alt="K-Means-3" src="https://github.com/user-attachments/assets/faac2cce-3103-4dfc-ab82-54cd8a615a21" />
-K-Means Image Segmentation, a) Enhanced Denoised Image, b) Frangi
-Filtered Artery Mask, c) Segmented Ward Linkage Image with K-Means
+a) Enhanced Denoised Image, b) Frangi Filtered Artery Mask, c) Segmented Ward Linkage Image with K-Means
 
 ---
 
@@ -167,8 +166,7 @@ Training loss decreased from approximately:
 
 <img width="1549" height="398" alt="Autoencoder" src="https://github.com/user-attachments/assets/6bd0642a-6dbb-45e4-b862-d25e3c710b22" />
 
-Convolutional Autoencoder Image Segmentation a) Original Image, b)
-Autoencoder Feature Enhanced Artery Image, c) Segmentation Red Overlay
+a) Original Image, b) Autoencoder Feature Enhanced Artery Image, c) Segmentation Red Overlay
 
 ### 3. UNet++ Segmentation 
 UNet++ is an advanced deep learning architecture designed specifically for **medical image segmentation**.
