@@ -8,7 +8,7 @@ from sklearn.cluster import KMeans, AgglomerativeClustering
 from sklearn.metrics import silhouette_score
 
 #get the directory and sort the files
-image_folder = "C:/Users/thega/OneDrive/Desktop/BSc Computer Science Year 3/CST3990 Undergraduate Individual Project/Project Folder/Videos and Photos/RPI 5"
+image_folder = "C:/Users/.../OneDrive/Desktop/BSc Computer Science Year 3/CST3990 Undergraduate Individual Project/Project Folder/Videos and Photos/RPI 5"
 image_files = sorted([img for img in os.listdir(image_folder) if img.endswith(('.jpg', '.png', '.jpeg'))])
 # quick check if the files exists
 if not image_files:
