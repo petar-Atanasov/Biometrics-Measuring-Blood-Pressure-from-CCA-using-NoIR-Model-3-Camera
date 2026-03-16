@@ -65,7 +65,7 @@ class ImageValidator:
 
 # use it in the main execution file
 if __name__ == '__main__':
-    dataset_folder = "C:/Users/thega/OneDrive/Desktop/BSc Computer Science Year 3/CST3990 Undergraduate Individual Project/Project Folder/dataset-10610238/Extracted"
+    dataset_folder = "C:/Users/.../OneDrive/Desktop/BSc Computer Science Year 3/CST3990 Undergraduate Individual Project/Project Folder/dataset-10610238/Extracted"
     validator = ImageValidator(dataset_folder, is_hyperspectral=True)
 
     print(f'Running image validation befpre training....')
