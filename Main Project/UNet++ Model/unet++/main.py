@@ -12,7 +12,7 @@ from visualisation import Visualisation
 # image_folder = "C:/Users/thega/OneDrive/Desktop/BSc Computer Science Year 3/CST3990 Undergraduate Individual Project/Project Folder/Videos and Photos/RPI 5"
 # image_files = sorted([img for img in os.listdir(image_folder) if img.endswith(('.jpg', '.jpeg', '.png'))])
 
-image_folder = "C:/Users/thega/OneDrive/Desktop/BSc Computer Science Year 3/CST3990 Undergraduate Individual Project/Project Folder/dataset-10610238/Extracted"
+image_folder = "C:/Users/.../OneDrive/Desktop/BSc Computer Science Year 3/CST3990 Undergraduate Individual Project/Project Folder/dataset-10610238/Extracted"
 bil_files = sorted([img for img in os.listdir(image_folder) if img.endswith(".bil")])
 hdr_files = sorted([img for img in os.listdir(image_folder) if img.endswith(".bil.hdr")])
 
